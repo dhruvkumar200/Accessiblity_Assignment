@@ -1,0 +1,267 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Style header and footer */
+  header, footer {
+    background-color: lightcoral;
+    color: #fff;
+    padding: 1rem;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  header nav ul li {
+    margin: 0 1rem;
+  }
+  
+  footer p {
+    text-align: center;
+    font-size: 0.8rem;
+  }
+  
+  footer nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+  }
+  
+  footer nav ul li {
+    margin: 0 1rem;
+  }
+  
+  /* Style main content */
+  main {
+    margin: 2rem auto;
+    max-width: 600px;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    background-color: lightcoral;
+  }
+  
+  form fieldset {
+    border: none;
+    margin-bottom: 1rem;
+  }
+  
+  form fieldset legend {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  form div {
+    margin-bottom: 0.5rem;
+  }
+  
+  form label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  form input[type="text"],
+  form input[type="email"],
+  form select {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  form button {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    margin-right: 0.5rem;
+    border: none;
+  }
+  
+  form button[type="reset"] {
+    background-color: #ccc;
+    color: #fff;
+  }
+  
+  form button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  form button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: coral;
+}
+
+table th, table td {
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+table th {
+    background-color: #333;
+    color: #fff;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 4px;
+    width: 400px;
+    max-width: 100%;
+}
+
+.modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.modal-close {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ccc;
+    cursor: pointer;
+    margin-left: auto;
+}
+  
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto; 
+    background-color: rgb(0, 0, 0); 
+    background-color: rgba(0, 0, 0, 0.4); 
+  }
+  
+
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 1px;
+    border: 1px solid #888;
+    width: 80%; 
+  }
+  
+
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+ 
+  .modal-header {
+   
+    text-align: center;
+  }
+ 
+  #myBtn {
+    display: flex;
+    justify-content: center;
+    margin-left: 48%;
+    margin-top: 2%;
+    color: white;
+    background-color: black;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    padding: 4px;
+    /* border: 1px solid red; */
+  }
+ 
+  .accordion {
+    background-color: lightcoral;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  
+  .active,
+  .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  .accordion:after {
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  
+  .footer-container {
+    background-color: black;
+    height: 10vh;
+    width: 100vw;
+    margin-top: 0vh;
+    position: relative;
+  }
+  .footer-para {
+    color: white;
+    padding: 20px;
+    margin-left: 43%;
+  }
+ 
+ 
+  h2 {
+   
+    text-align: center;
+    padding: 10px;
+  }
+  
